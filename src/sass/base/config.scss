@@ -1,0 +1,34 @@
+$color-orange: #ff553e;
+$color-orange-light: rgba(255, 85, 62, 0.2);
+
+$color-blue: #18063c;
+$color-grey: #404040;
+
+$color-bg-primary: #fff8f2;
+$color-bg-secondary: #f3fdfe;
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $color-grey;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container {
+  padding: 0 25px;
+  max-width: 100%;
+}
+
+@screen md {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@screen lg {
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
