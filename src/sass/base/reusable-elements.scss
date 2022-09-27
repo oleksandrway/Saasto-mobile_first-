@@ -26,8 +26,13 @@
   font-weight: 600;
   line-height: 150%;
 
+  color: $color-blue;
   &--color-white {
     color: #fff;
+  }
+
+  &--color-grey {
+    color: $color-grey;
   }
 
   &-1 {
@@ -51,24 +56,49 @@
   color: $color-orange;
   border-radius: 40px;
   font-size: 18px;
-
   padding: 16px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
 
-  &--big {
-    padding: 24px 40px;
-  }
-
-  &--outlined {
-    box-shadow: inset 0 0 0 1px $color-orange;
-  }
-
-  &--bg-orange {
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
     background-color: $color-orange;
-    color: #fff;
   }
 
-  &--bg-white {
-    background: #fff;
-    color: $color-orange;
+  &:hover,
+  &:active {
+    &:after {
+      opacity: 0.1;
+    }
   }
+}
+
+.btn--big {
+  padding: 24px 40px;
+}
+
+.btn--outlined {
+  box-shadow: inset 0 0 0 1px $color-orange;
+}
+
+.btn--bg-orange {
+  background-color: $color-orange;
+  color: #fff;
+
+  &:after {
+    background: $color-grey;
+  }
+}
+
+.btn--bg-white {
+  background: #fff;
+  color: $color-orange;
 }

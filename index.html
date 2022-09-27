@@ -16,17 +16,21 @@
 
 <body>
   <header class="header">
-    <div class="container flex justify-between items-center">
+    <div class="container flex justify-between items-center ">
       <div class="header__logo">
         <a href="#" class="header__logo-link">
           <img src="/logo.png" alt="logo image" class="header__logo-img">
         </a>
       </div>
 
-      <nav class="header__menu-wrapper">
+      <nav class="header__menu-wrapper ">
+        <div class="header__menu-overlay">
+        </div>
+
         <div class="header__menu header-menu">
 
-          <ul class="header-menu__links">
+
+          <ul class="header-menu__links ">
             <li class="header-menu__links-item">
               <a class="header-menu__link" href="#">Demos</a>
             </li>
@@ -39,45 +43,33 @@
             <li class="header-menu__links-item">
               <a class="header-menu__link" href="#">Contact</a>
             </li>
-            <li class="header-menu__links-item">
-              <button class="btn btn--primary"> </button>
-            </li>
           </ul>
 
-          <div class="header-menu__actions">
-            <a href="#" class="header-menu__login">Login</a>
-            <a href="#" class="header-menu__signup">Sign up</a>
+          <div class="header-menu__actions flex items-center gap-10px">
+            <div class=" menu-btn menu-btn--close header__btn-close">
+              <span></span><span></span><span></span>
+            </div>
+            <button href="#" class="header-menu__login btn">Login</button>
+            <button href="#" class="header-menu__signup btn btn--bg-orange">Sign up</button>
           </div>
         </div>
 
 
-        <div class="header__menu-btn">
+        <div class="menu-btn header__btn-open ">
           <span></span><span></span><span></span>
         </div>
+
       </nav>
     </div>
   </header>
 
   <div class="temporary-devider h-200px bg-red-300 text-center">
 
-    <h2 class="ml-1">ahoy</h2>
-    <p>Features</p>
-    <h3>ahoy again</h3>
-    <button class="btn  btn--bg-white ">
-      Get Started
-    </button>
+
   </div>
 
-  <div class="temporary-devider h-200px  text-center ">
+  <div class="temporary-devider h-200px  bg-green-200 text-center ">
 
-    <button class="btn   ">
-      Get Started
-    </button>
-    <button class="btn btn--outlined btn--big">
-      Get Started
-    </button>
-    <button class="btn btn--bg-orange btn--big">
-      Start 14 Days Trial </button>
   </div>
 
 
