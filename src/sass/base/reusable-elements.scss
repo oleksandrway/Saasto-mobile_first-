@@ -1,16 +1,19 @@
 .desc {
   opacity: 0.8;
-  font-weight: 400;
-  line-height: 180%;
+  font-size: 16px;
+  color: $color-grey;
   font-family: "Inter", sans-serif;
 
-  &--color-black {
+  &--black {
     color: #000;
     opacity: 1;
   }
 
-  &--color-white {
+  &--white {
     color: #fff;
+  }
+
+  &--color-grey {
   }
 
   &--small {
@@ -53,6 +56,7 @@
 }
 
 .btn {
+  font-weight: 500;
   color: $color-orange;
   border-radius: 40px;
   font-size: 18px;
@@ -101,4 +105,56 @@
 .btn--bg-white {
   background: #fff;
   color: $color-orange;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  a {
+    display: block;
+    padding: 7px 0;
+    position: relative;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
+}
+
+@screen sm {
+  .menu {
+    &--footer {
+      flex-direction: row;
+    }
+  }
+}
+
+@screen md {
+  .menu {
+    &--footer {
+      gap: 30px;
+    }
+  }
+}
+
+@screen lg {
+  .desc {
+    font-size: 18px;
+
+    &--small {
+      font-size: 18px;
+    }
+
+    &--big {
+      font-size: 20px;
+    }
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 48px;
+  }
 }
