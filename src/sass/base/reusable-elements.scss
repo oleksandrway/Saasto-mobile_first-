@@ -1,3 +1,10 @@
+.underlined-word {
+  // height: 45px;
+  display: inline-block;
+  background: url(/title-underline_mobile.png) no-repeat scroll center bottom 0px;
+  background-size: contain;
+}
+
 .desc {
   opacity: 0.8;
   font-size: 16px;
@@ -8,16 +15,13 @@
     line-height: 225%;
   }
 
-  &--black {
+  &--color-black {
     color: #000;
     opacity: 1;
   }
 
-  &--white {
+  &--color-white {
     color: #fff;
-  }
-
-  &--color-grey {
   }
 
   &--small {
@@ -149,10 +153,19 @@
     &-1 {
       // font-size: 32px;
     }
+    &-2 {
+      font-size: 30px;
+    }
   }
 }
 
 @screen md {
+  .underlined-word {
+    // height: 61px;
+    background: url(/title-underline_mobile.png) no-repeat scroll left 0px bottom 0px;
+    background-size: contain;
+  }
+
   .menu {
     &--footer {
       gap: 30px;
@@ -179,6 +192,16 @@
     // }
   }
 
+  .title {
+    &-2 {
+      font-size: 38px;
+    }
+
+    &-3 {
+      font-size: 28px;
+    }
+  }
+
   .menu {
     flex-direction: row;
     gap: 48px;
@@ -193,9 +216,19 @@
   }
 }
 @screen 2xl {
+  .underlined-word {
+    // height: auto;
+    background: url(/title-underline.png) no-repeat scroll left 0px bottom 0px;
+    background-size: contain;
+  }
+
   .title {
     &-1 {
       font-size: 64px;
+    }
+
+    &-2 {
+      font-size: 48px;
     }
   }
 }

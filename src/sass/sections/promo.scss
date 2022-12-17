@@ -10,12 +10,6 @@
   padding: 5px 0 86px 0;
 }
 
-.promo__underlined-word {
-  height: 45px;
-  display: inline-block;
-  background: url(/promo/title-underline_mobile.png) no-repeat scroll center bottom -3px;
-}
-
 .alarm-clock {
   display: inline-block;
   width: 72px;
@@ -66,9 +60,12 @@
     top: -30px;
   }
 
-  .promo__underlined-word {
-    height: 61px;
-    background: url(/promo/title-underline_mobile.png) no-repeat scroll left -2px bottom -3px;
+  .promo__statistics-item {
+    &:not(:last-child) {
+      &:after {
+        display: none;
+      }
+    }
   }
 }
 
@@ -86,14 +83,6 @@
   .alarm-clock {
     left: calc(50% - 320px);
     top: -30px;
-  }
-
-  .promo__statistics-item {
-    &:not(:last-child) {
-      &:after {
-        display: none;
-      }
-    }
   }
 }
 
@@ -126,11 +115,6 @@
     top: 87px;
     width: 157px;
     height: 173px;
-  }
-  .promo__underlined-word {
-    height: auto;
-    background: url(/promo/title-underline.png) no-repeat scroll left -2px bottom 2px;
-    background-size: auto 45px;
   }
 
   .promo__statistics {
