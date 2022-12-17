@@ -1,0 +1,157 @@
+.promo {
+  position: relative;
+}
+.promo__main-content {
+  background: url(/promo/line-bottom_mobile.png) no-repeat scroll left 269px bottom 51px,
+    url(/promo/diamond_mobile.png) no-repeat scroll left -1px bottom 17px,
+    url(/promo/line-right_mobile.png) no-repeat right top 20px;
+
+  background-color: $color-bg-primary;
+  padding: 5px 0 86px 0;
+}
+
+.promo__underlined-word {
+  height: 45px;
+  display: inline-block;
+  background: url(/promo/title-underline_mobile.png) no-repeat scroll center bottom -3px;
+}
+
+.alarm-clock {
+  display: inline-block;
+  width: 72px;
+  height: 79px;
+  background: url(/promo/alarm-clock.png) no-repeat scroll center center;
+  background-size: contain;
+  margin-bottom: -12px;
+}
+
+.promo__statistics {
+  // background: url(/promo/rocket.png) no-repeat left -22px bottom -50px;
+  // background-size: auto 90px;
+  background-color: #fff;
+}
+
+.promo__statistics-item {
+  // border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+  position: relative;
+  padding: 38px 0;
+  &:not(:last-child) {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 180px;
+      height: 1px;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
+
+@screen md {
+  .promo__main-content {
+    background: url(/promo/line-bottom_mobile.png) no-repeat scroll left 300px bottom 51px,
+      url(/promo/diamond_mobile.png) no-repeat scroll left -1px bottom 17px,
+      url(/promo/line-right_mobile.png) no-repeat right top 20px,
+      url(/promo/phone-right.png) no-repeat left 500px top 50px;
+
+    background-size: auto, auto, auto, 41%;
+    background-color: $color-bg-primary;
+  }
+
+  .alarm-clock {
+    position: absolute;
+    left: 500px;
+    top: -30px;
+  }
+
+  .promo__underlined-word {
+    height: 61px;
+    background: url(/promo/title-underline_mobile.png) no-repeat scroll left -2px bottom -3px;
+  }
+}
+
+@screen lg {
+  .promo__main-content {
+    text-align: center;
+    background: url(/promo/line-bottom_mobile.png) no-repeat scroll right calc(50% - 200px) bottom 51px,
+      url(/promo/diamond_mobile.png) no-repeat scroll left calc(50% - 190px) bottom 87px,
+      url(/promo/line-right_mobile.png) no-repeat right top 20px, url(/promo/phone-right.png) no-repeat right top 50px,
+      url(/promo/phone-left.png) no-repeat left top 50px;
+
+    background-color: $color-bg-primary;
+    background-size: auto, auto, auto, 31%, 27%;
+  }
+  .alarm-clock {
+    left: calc(50% - 320px);
+    top: -30px;
+  }
+
+  .promo__statistics-item {
+    &:not(:last-child) {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+@screen xl {
+  .promo__main-content {
+    padding: 35px 0 86px 0;
+  }
+
+  .alarm-clock {
+    left: calc(50% - 420px);
+    top: 0px;
+  }
+}
+
+@screen 2xl {
+  .promo__main-content {
+    background: url(/promo/clipboard.png) no-repeat scroll right calc(50% - 342px) bottom 280px,
+      url(/promo/diamond.png) no-repeat scroll left calc(50% - 342px) bottom 280px,
+      url(/promo/line-right.png) no-repeat right top 0,
+      url(/promo/phone-right.png) no-repeat right calc(50% - 732px) top 236px,
+      url(/promo/phone-left.png) no-repeat left calc(50% - 683px) top 241px;
+
+    background-color: $color-bg-primary;
+
+    padding: 179px 0 386px 0;
+  }
+
+  .alarm-clock {
+    left: calc(50% - 580px);
+    top: 87px;
+    width: 157px;
+    height: 173px;
+  }
+  .promo__underlined-word {
+    height: auto;
+    background: url(/promo/title-underline.png) no-repeat scroll left -2px bottom 2px;
+    background-size: auto 45px;
+  }
+
+  .promo__statistics {
+    padding-left: 500px;
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 470px);
+    border-top-right-radius: 20px;
+    transform: skew(30deg);
+
+    .container {
+      transform: skew(-30deg);
+    }
+  }
+
+  .promo__statistics-container {
+    padding: 0 245px 0 100px;
+  }
+
+  .promo__statistics-item {
+    padding: 80px 0 9px 0;
+    min-width: 150px;
+  }
+}

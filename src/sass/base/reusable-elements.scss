@@ -4,6 +4,10 @@
   color: $color-grey;
   font-family: "Inter", sans-serif;
 
+  &--big-line-height {
+    line-height: 225%;
+  }
+
   &--black {
     color: #000;
     opacity: 1;
@@ -27,9 +31,13 @@
 
 .title {
   font-weight: 600;
-  line-height: 150%;
-
+  line-height: 145%;
+  font-weight: 600;
   color: $color-blue;
+
+  &--color-black {
+    color: #000;
+  }
   &--color-white {
     color: #fff;
   }
@@ -40,6 +48,7 @@
 
   &-1 {
     font-size: 28px;
+    font-weight: 700;
   }
 
   &-2 {
@@ -77,10 +86,15 @@
     background-color: $color-orange;
   }
 
-  &:hover,
-  &:active {
+  &:hover {
     &:after {
       opacity: 0.1;
+    }
+  }
+
+  &:active {
+    &:after {
+      opacity: 0.2;
     }
   }
 }
@@ -130,12 +144,24 @@
       flex-direction: row;
     }
   }
+
+  .title {
+    &-1 {
+      // font-size: 32px;
+    }
+  }
 }
 
 @screen md {
   .menu {
     &--footer {
       gap: 30px;
+    }
+  }
+
+  .title {
+    &-1 {
+      font-size: 35px;
     }
   }
 }
@@ -148,13 +174,28 @@
       font-size: 18px;
     }
 
-    &--big {
-      font-size: 20px;
-    }
+    // &--big {
+    //   font-size: 20px;
+    // }
   }
 
   .menu {
     flex-direction: row;
     gap: 48px;
+  }
+}
+
+@screen xl {
+  .title {
+    &-1 {
+      font-size: 48px;
+    }
+  }
+}
+@screen 2xl {
+  .title {
+    &-1 {
+      font-size: 64px;
+    }
   }
 }
