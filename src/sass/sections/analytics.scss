@@ -1,5 +1,5 @@
 .analytics {
-  padding: 60px 0 20px 0;
+  padding: 60px 0 40px 0;
 }
 
 .analytics__item {
@@ -23,8 +23,6 @@
 
 .analytics__img {
   position: relative;
-  // width: 80%;
-  // max-width: 400px;
   margin: 0 auto;
   &:after {
     content: "";

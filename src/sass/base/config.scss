@@ -7,12 +7,17 @@ $color-grey: #404040;
 $color-bg-primary: #fff8f2;
 $color-bg-secondary: #f3fdfe;
 
+section {
+  overflow: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: $color-grey;
   line-height: 1.5;
   font-weight: 400;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 .font-inter {
@@ -26,6 +31,7 @@ body {
 .container {
   padding: 0 25px;
   max-width: 100%;
+  // overflow: hidden;
 }
 
 @screen md {
