@@ -10,9 +10,10 @@
   font-size: 16px;
   color: $color-grey;
   font-family: "Inter", sans-serif;
+  line-height: 1.8;
 
   &--big-line-height {
-    line-height: 225%;
+    line-height: 2.25;
   }
 
   &--color-black {
@@ -65,6 +66,7 @@
 
   &-4 {
     font-size: 18px;
+    line-height: 1;
   }
 }
 
@@ -212,6 +214,10 @@
   .title {
     &-1 {
       font-size: 48px;
+    }
+
+    &-4 {
+      font-size: 28px;
     }
   }
 }
