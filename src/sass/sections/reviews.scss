@@ -1,0 +1,11 @@
+.reviews {
+  padding: 40px 0 80px 0;
+}
+
+.reviews__img {
+  width: 170px;
+  height: 144px;
+  object-fit: contain;
+  background-color: $color-bg-primary;
+  // object-position: top;
+}
