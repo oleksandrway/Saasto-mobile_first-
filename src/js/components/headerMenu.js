@@ -15,15 +15,19 @@ const headerMenuOverlay = document.querySelector('.header__menu-overlay')
 //   }
 // }
 
-headerMenuBtn.addEventListener('click', () => {
-  headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
-})
-
-headerMenuClose.addEventListener('click', () => {
-  headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
-})
-
-headerMenuOverlay.addEventListener('click', (e) => {
-  if (e.target === headerMenuOverlay)
+function headerMenu() {
+  headerMenuBtn.addEventListener('click', () => {
     headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
-})
+  })
+
+  headerMenuClose.addEventListener('click', () => {
+    headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
+  })
+
+  headerMenuOverlay.addEventListener('click', (e) => {
+    if (e.target === headerMenuOverlay)
+      headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
+  })
+}
+
+export { headerMenu }

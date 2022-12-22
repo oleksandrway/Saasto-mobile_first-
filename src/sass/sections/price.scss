@@ -1,0 +1,68 @@
+.price {
+  padding: 80px 0 40px 0;
+}
+
+.price__tile {
+  padding: 40px 25px;
+  border: 1px solid $color-orange;
+  border-radius: 30px;
+  max-width: 470px;
+  min-width: 320px;
+  flex-grow: 1;
+
+  &--bg-orange {
+    background-color: $color-orange;
+  }
+}
+.price__tile-info {
+  position: relative;
+}
+.price__sum {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.price__sum--main {
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.price__sum--hidden {
+  opacity: 0;
+
+  // display: none;
+}
+
+@screen lg {
+  .price {
+    padding: 100px 0;
+  }
+}
+
+@screen 2xl {
+  .price {
+    padding: 140px 0;
+    background: url(/price/hand.png) no-repeat left bottom 160px,
+      url(/price/sand-watch.png) no-repeat right calc(50% - 513px) top 261px;
+  }
+
+  .price__tile {
+    padding: 64px 0 48px 0;
+
+    border-radius: 110px;
+  }
+
+  .price__tile-title {
+    margin-bottom: 50px;
+  }
+
+  .price__tile-desc {
+    font-size: 28px;
+  }
+
+  .price__sum {
+    position: static;
+    // right: 20px;
+    // top: 0;
+  }
+}

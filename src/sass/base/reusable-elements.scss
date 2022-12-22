@@ -25,6 +25,10 @@
     color: #fff;
   }
 
+  &--color-orange {
+    color: $color-orange;
+  }
+
   &--small {
     font-size: 14px;
   }
@@ -145,6 +149,65 @@
   }
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-orange-light;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: $color-orange;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $color-orange-light;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $color-orange-light;
+}
+
+input:checked + .slider:before {
+  transform: translateX(28px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 @screen sm {
   .menu {
     &--footer {
@@ -209,6 +272,21 @@
   .menu {
     flex-direction: row;
     gap: 48px;
+  }
+
+  .switch {
+    width: 84px;
+    height: 40px;
+  }
+  .slider:before {
+    height: 28px;
+    width: 28px;
+    left: 6px;
+    bottom: 6px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(44px);
   }
 }
 
