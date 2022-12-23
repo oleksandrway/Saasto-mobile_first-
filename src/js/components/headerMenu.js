@@ -3,6 +3,31 @@ const headerMenuClose = document.querySelector('.header__btn-close')
 const headerMenuWrapper = document.querySelector('.header__menu-wrapper')
 const headerMenuOverlay = document.querySelector('.header__menu-overlay')
 
+function toggleMenu() {
+  headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
+  document.body.classList.add('no-scroll')
+}
+
+function headerMenu() {
+  headerMenuBtn.addEventListener('click', () => {
+    toggleMenu()
+    // headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
+  })
+
+  headerMenuClose.addEventListener('click', () => {
+    toggleMenu()
+
+    // headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
+  })
+
+  headerMenuOverlay.addEventListener('click', (e) => {
+    if (e.target === headerMenuOverlay)
+      toggleMenu()
+
+    // headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
+  })
+}
+
 // const headerMenu = document.querySelector('.header-menu')
 
 // function closeHeaderMenu(e) {
@@ -14,20 +39,4 @@ const headerMenuOverlay = document.querySelector('.header__menu-overlay')
 //     document.body.classList.remove('no-scroll')
 //   }
 // }
-
-function headerMenu() {
-  headerMenuBtn.addEventListener('click', () => {
-    headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
-  })
-
-  headerMenuClose.addEventListener('click', () => {
-    headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
-  })
-
-  headerMenuOverlay.addEventListener('click', (e) => {
-    if (e.target === headerMenuOverlay)
-      headerMenuWrapper.classList.toggle('header__menu-wrapper--active')
-  })
-}
-
 export { headerMenu }
