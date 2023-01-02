@@ -34,10 +34,9 @@
   border-radius: 10px;
   margin-right: -5px;
   transition: all 0.3s;
+  cursor: pointer;
 
   &:hover {
-    // transition: all 0.3s;
-
     background-color: rgba($color-orange, 0.1);
   }
   span {
@@ -66,10 +65,19 @@
 
 .header-menu {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: start;
-  gap: 15px;
-  // padding: 20px 0;
+}
+
+.header-menu__header {
+  padding: 10px 10px;
+}
+
+.header-menu__links {
+  padding: 20px 10px;
+}
+
+.header-menu__actions {
   padding: 20px 10px;
 }
 
@@ -145,7 +153,9 @@
   .header-menu__links {
     display: flex;
     align-items: center;
-    gap: 30px;
+    row-gap: 10px;
+    column-gap: 30px;
+    flex-wrap: wrap;
   }
 }
 

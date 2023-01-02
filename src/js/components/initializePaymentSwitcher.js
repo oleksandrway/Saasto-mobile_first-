@@ -7,7 +7,7 @@ const paymentSum = document.querySelector('.price__sum--main')
 const paymentNumber = document.querySelector('.price__sum-number')
 const paymentType = document.querySelector('.price__payment-type')
 
-function activatePaymentSwitcher() {
+function initializePaymentSwitcher() {
   function changePayment(newSum, newType) {
     paymentSum.classList.add('price__sum--hidden')
     setTimeout(() => {
@@ -26,4 +26,4 @@ function activatePaymentSwitcher() {
   })
 }
 
-export { activatePaymentSwitcher }
+export { initializePaymentSwitcher }

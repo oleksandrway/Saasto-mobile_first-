@@ -1,9 +1,9 @@
 
-import { headerMenu } from './components/headerMenu'
-import { activatePaymentSwitcher } from './components/activatePaymentSwitcher'
+import { initializeHeaderMenu } from './components/initializeHeaderMenu'
+import { initializePaymentSwitcher } from './components/initializePaymentSwitcher'
 import { initializeReviewsSlider } from './components/initializeReviewsSlider'
 
 initializeReviewsSlider()
 
-headerMenu()
-activatePaymentSwitcher()
+initializeHeaderMenu()
+initializePaymentSwitcher()

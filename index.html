@@ -28,6 +28,17 @@
         </div>
         <div class="header__menu header-menu">
 
+          <div class="header-menu__header lg:hidden flex justify-between items-center">
+            <div class="header__logo ">
+              <a href="#" class="header__logo-link">
+                <img src="/logo.png" alt="logo image" class="header__logo-img">
+              </a>
+            </div>
+            <div class=" menu-btn menu-btn--close header__btn-close">
+              <span></span><span></span><span></span>
+            </div>
+
+          </div>
 
           <ul class="header-menu__links  menu">
             <li>
@@ -42,14 +53,13 @@
             <li>
               <a href="#">Contact</a>
             </li>
+
           </ul>
 
           <div class="header-menu__actions flex items-center gap-10px">
+            <button href="#" class="header-menu__signup btn btn--bg-orange flex-shrink-0">Sign up</button>
             <button href="#" class="header-menu__login btn">Login</button>
-            <button href="#" class="header-menu__signup btn btn--bg-orange">Sign up</button>
-            <div class=" menu-btn menu-btn--close header__btn-close">
-              <span></span><span></span><span></span>
-            </div>
+
           </div>
         </div>
 
@@ -505,16 +515,11 @@
       <div class="footer__bottom ">
         <a href="#" class="footer__bottom-item desc ">Terms & condition</a>
         <a href="#" class="footer__bottom-item desc ">Privacy policy</a>
-        <p class="footer__bottom-item  desc footer__bottom-item--right">All Right Reserved @ plowv.com</p>
+        <p class="footer__bottom-item  desc footer__bottom-item--right">All Right Reserved @ <a href="#">plowv.com</a>
+        </p>
 
       </div>
   </footer>
-  <div class="wrapper">
-
-    <div class=" first temporary-devider h-106px bg-red-300 ">
-    </div>
-
-  </div>
 
 
   <script type="module" src="/main.js"></script>

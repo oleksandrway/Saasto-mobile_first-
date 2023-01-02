@@ -6,10 +6,10 @@ function initializeReviewsSlider() {
     modules: [Autoplay, Keyboard, Pagination],
     loop: true,
     keyboard: true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
