@@ -1,5 +1,4 @@
 .underlined-word {
-  // height: 45px;
   display: inline-block;
   background: url(/title-underline_mobile.png) no-repeat scroll center bottom 0px;
   background-size: contain;
@@ -216,9 +215,6 @@ input:checked + .slider:before {
   }
 
   .title {
-    &-1 {
-      // font-size: 32px;
-    }
     &-2 {
       font-size: 30px;
     }
@@ -227,7 +223,6 @@ input:checked + .slider:before {
 
 @screen md {
   .underlined-word {
-    // height: 61px;
     background: url(/title-underline_mobile.png) no-repeat scroll left 0px bottom 0px;
     background-size: contain;
   }
@@ -252,10 +247,6 @@ input:checked + .slider:before {
     &--small {
       font-size: 18px;
     }
-
-    // &--big {
-    //   font-size: 20px;
-    // }
   }
 
   .title {
@@ -303,7 +294,6 @@ input:checked + .slider:before {
 }
 @screen 2xl {
   .underlined-word {
-    // height: auto;
     background: url(/title-underline.png) no-repeat scroll left 0px bottom 0px;
     background-size: contain;
   }

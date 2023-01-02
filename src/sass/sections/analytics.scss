@@ -37,7 +37,6 @@
   }
 
   img {
-    // width: auto;
     height: 100%;
   }
 }
@@ -47,7 +46,6 @@
     flex: 0 0 60%;
   }
   .analytics__img {
-    // flex: 0 0 auto;
     flex-shrink: 0;
     height: 500px;
   }
@@ -58,7 +56,6 @@
     flex: 0 0 50%;
   }
   .analytics__img {
-    // flex-shrink: 1;
     height: auto;
   }
 

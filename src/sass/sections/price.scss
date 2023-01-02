@@ -29,8 +29,6 @@
 
 .price__sum--hidden {
   opacity: 0;
-
-  // display: none;
 }
 
 @screen lg {
@@ -62,7 +60,5 @@
 
   .price__sum {
     position: static;
-    // right: 20px;
-    // top: 0;
   }
 }
